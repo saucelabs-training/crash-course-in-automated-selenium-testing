@@ -6,12 +6,12 @@
 1. <a href="https://github.com/join" target="_blank">Sign up for a Github account</a>
 2. Download and install an [IDE](https://www.jetbrains.com/ruby/download/#section=mac) or a [text editor](https://www.sublimetext.com/3).
 3. (Optional) Download and install and [IDE](https://www.jetbrains.com/ruby/download/#section=mac).
-4. [Clone this repository]().
+4. [Clone this repository](https://github.com/saucelabs-training/crash-course-in-automated-selenium-testing.git).
 5. Open `sauce_example.rb` file
 
 #### Gitpod Setup
 1. <a href="https://github.com/join" target="_blank">Sign up for a Github account</a>.
-2. Click this link to <a href="https://" target="_blank">open the project in Gitpod</a>. 
+2. Click this link to <a href="https://gitpod.io/#https://github.com/saucelabs-training/crash-course-in-automated-selenium-testing/tree/master/crash-course-python" target="_blank">open the project in Gitpod</a>. 
 3. Sign into Github & Authorize Gitpod.
 4. In the <strong>File</strong> drop down, select "Auto-Save."
 5. Open `sauce_example.rb` file

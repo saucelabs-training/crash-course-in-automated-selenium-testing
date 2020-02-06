@@ -3,6 +3,6 @@ The following materials are meant to aide and augment the Selenium meetup presen
 
 This repo includes:
 * slides
-* demonstrations scripts in `python` and `ruby`
+* demonstrations scripts in `craash-course-python` and `crash-course-ruby`
 
 Please select the language of your choice and follow the instructions.
