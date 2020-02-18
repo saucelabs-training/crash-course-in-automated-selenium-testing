@@ -1,6 +1,6 @@
 tasks:
   - init: wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-    command: sudo apt install ./google-chrome-stable_current_amd64.deb
+    command: apt install ./google-chrome-stable_current_amd64.deb
 ports:
   - port: 3000-9600
     onOpen: open-preview
