@@ -1,7 +1,7 @@
 image:
     file: .gitpod.Dockerfile
 ports:
-  - port: 3000-9600
+  - port: 1024-49151
     onOpen: open-preview
 tasks:
-  - command: chromium-browser --no-sandbox
+  - command: google-chrome-stable --no-sandbox --disable-setuid-sandbox 
