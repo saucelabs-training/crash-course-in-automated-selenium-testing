@@ -4,8 +4,9 @@ USER gitpod
 
 # Install Google Chrome
 ARG CHROME_VERSION="google-chrome-stable"
-RUN sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - \
-  && echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list \
+RUN sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub \
+  && sudo apt-key add - \
+  && sudo echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list \
   && sudo apt-get update -qqy \
   && sudo apt-get -qqy install \
     ${CHROME_VERSION:-google-chrome-stable} \
