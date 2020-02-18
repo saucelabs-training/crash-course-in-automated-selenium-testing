@@ -2,9 +2,6 @@ FROM gitpod/workspace-full-vnc
 
 USER gitpod
 
-# Versions
-ARG CHROME_DRIVER_VERSION=curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE
-
 # Install Google Chrome
 ARG CHROME_VERSION="google-chrome-stable"
 RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
