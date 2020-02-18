@@ -1,5 +1,7 @@
 image:
-    file: Dockerfile
+    file: .gitpod.Dockerfile
 ports:
   - port: 3000-9600
     onOpen: open-preview
+tasks:
+  - command: chromium-browser --no-sandbox
