@@ -8,11 +8,7 @@ ports:
   - port: 1000-5999
     onOpen: ignore
 tasks:
-  - command: cd crash-course-ruby/local && gem install bundler && bundle install
-    name: Install Local Ruby Gems
-  - command: cd crash-course-ruby/sauce && gem install bundler && bundle install
-    name: Install Sauce Ruby Gems
-  - command: cd crash-course-python/local && pip install -r requirements.txt
-    name: Install Local Python Dependencies
-  - command: cd crash-course-python/sauce && pip install -r requirements.txt
-    name: Install Sauce Python Dependencies
+  - command: gem install crash-course-ruby/bundler && crash-course-ruby/bundle install
+    name: Install Ruby Dependencies
+  - command: pip3 install -r crash-course-python/requirements.txt
+    name: Install Python Dependencies
