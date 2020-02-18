@@ -5,5 +5,5 @@
 
 <a href="https://gitpod.io/#https://github.com/saucelabs-training/crash-course-in-automated-selenium-testing/tree/master/crash-course-ruby"><img src="open-in-gitpod.png" align="middle" title="Open in Gitpod"></a>
 
-3. Choose the "Login with GitHub.." option.
-4. Allow Gitpod acces to GitHub
+3. Choose the "Login with GitHub..." option.
+4. Allow Gitpod access to GitHub
