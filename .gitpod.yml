@@ -8,7 +8,7 @@ ports:
   - port: 1000-5999
     onOpen: ignore
 tasks:
-  - command: gem install crash-course-ruby/bundler && crash-course-ruby/bundle install
+  - command: cd crash-course-ruby && gem install bundler && && bundle install
     name: Install Ruby Dependencies
   - command: pip3 install -r crash-course-python/requirements.txt
     name: Install Python Dependencies
