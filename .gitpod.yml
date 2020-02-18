@@ -12,7 +12,7 @@ tasks:
     name: Install Local Ruby Gems
   - command: cd crash-course-ruby/sauce && gem install bundler && bundle install
     name: Install Sauce Ruby Gems
-  - command: cd crash-course-python/local && install -r requirements.txt
+  - command: cd crash-course-python/local && pip install -r requirements.txt
     name: Install Local Python Dependencies
-  - command: cd crash-course-python/sauce && install -r requirements.txt
+  - command: cd crash-course-python/sauce && pip install -r requirements.txt
     name: Install Sauce Python Dependencies
