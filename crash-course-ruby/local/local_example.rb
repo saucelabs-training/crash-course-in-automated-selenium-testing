@@ -10,6 +10,7 @@ require 'selenium-webdriver'
 ## For Remote Runs i.e. Gitpod ##
 options = Selenium::WebDriver::Chrome::Options.new
     options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
 Selenium::WebDriver::Chrome::Service.driver_path=('/usr/bin/chromedriver')
 @driver = Selenium::WebDriver.for :chrome, options: options
 
