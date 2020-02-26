@@ -24,32 +24,34 @@
 3. Sign into Gitpod using your GitHub Account.
 4. Allow Gitpod access to GitHub
 5. In the upper left corner, select File > Auto Save
-6. Open the `crash-course-ruby` directory.
-7. Run `gem bundle install` to install a dependency bundler application
-8. Run `bundle install` to install the dependencies listed in the `Gemfile`
-
+6. Open the `crash-course-java` directory.
+7. Run `mvn dependency:resolve` to install the dependencies.
+8. Run the following command to run your test:
+    ```
+    mvn test -D=LocalExampleTest
+    ```
 <br />
 
 ## Exercises
 
 ##### Use a Selenium WebDriver to open a browser
-1. Open `local/local_example.rb` in your editor.
-2. Uncomment lines `1`, and `15`.
-3. Uncomment line `25`.
+1. Open `src/test/java/LocalExampleTest.java` in your editor.
+2. Uncomment lines `1` to `19`.
+3. Uncomment lines `15` t0 `29`.
 4. In a terminal, run the following command:
     ```
-    ruby local/local_example.rb
+    mvn test -D=LocalExampleTest
     ```
    
 <br />
 
 ##### Locate elements with Selenium
-1. Open `local/local_example.rb` in your editor.
-2. Write the following lines below `@driver.get "http://www.saucedemo.com/"`:
+1. Open `src/test/java/LocalExampleTest.java` in your editor.
+2. Write the following lines below `driver.navigate().to("https://www.saucedemo.com");"`:
     ```
-    @driver.find_element(id: '')
-    @driver.find_element(id: '')
-    @driver.find_element(css: "")
+    driver.findElement(By.id(""));
+    driver.findElement(By.id(""));
+    driver.findElement(By.cssSelector(""));
     ```
 3. Use Chrome Dev tools to locate and fill in the data for the following elements:
     * the username form
@@ -57,37 +59,37 @@
     * the submit button
 4. In a terminal, run the following command:
     ```
-    ruby local/local_example.rb
+    mvn test -D=LocalExampleTest
     ```   
 
 <br />
 
 ##### Perform actions on the located elements
-1. Open `local/local_example.rb` in your editor.
+1. Open `src/test/java/LocalExampleTest.java` in your editor.
 2. Use the following Selenium Actions in your script:
     ```
-    @driver.find_element(id: '').send_keys('')
-    @driver.find_element(id: '').send_keys('')
-    @driver.find_element(css: "").click
+    driver.findElement(By.id("")).sendKeys("");
+    driver.findElement(By.id("")).sendKeys("");
+    driver.findElement(By.cssSelector("")).click();
     ```
-3. Use the username and password that displays on the demo site for the `send_keys()` values.
+3. Use the username and password that displays on the demo site for the `.sendKeys("")` values.
 4. In a terminal, run the following command:
     ```
-    ruby local/local_example.rb
+    mvn test -D=LocalExampleTest
     ```
 
 <br />
 
 ##### Write a test assertion to validate test actions
-1. Open `local/local_example.rb` in your editor.
-2. Write the following lines immediately before `@driver.quit` (line `25`):
+1. Open `src/test/java/LocalExampleTest.java` in your editor.
+2. Write the following lines immediately before `driver.quit()` (line `29`):
    ```
-   actual_result = @driver.current_url == "https://www.saucedemo.com/inventory.html" ? "passed" : "failed"
-   puts "The test #{actual_result}"
+   String actualResult = driver.getCurrentUrl().equals("https://www.saucedemo.com/inventory.html") ? "passed" : "failed";
+   System.out.println("The Test " + actualResult);
    ```
 3. In a terminal, run the following command:
     ```
-    ruby local/local_example.rb
+    mvn test -D=LocalExampleTest
     ```
    
 <br />

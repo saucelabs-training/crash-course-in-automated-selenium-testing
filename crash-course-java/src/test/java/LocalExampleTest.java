@@ -8,15 +8,15 @@ public class LocalExampleTest {
     @Test
     public void main () {
 
-        /** For Local Test Runs **/
-        System.setProperty("webdriver.chrome.driver","src/drivers/mac64/chromedriver80/chromedriver" );
-        WebDriver driver = new ChromeDriver();
+//        /** For Local Test Runs **/
+//        System.setProperty("webdriver.chrome.driver","src/drivers/mac64/chromedriver80/chromedriver" );
+//        WebDriver driver = new ChromeDriver();
 
-//        /** For Remote Test Runs I.E. Gitpod **/
-//        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-//        ChromeOptions options = new ChromeOptions();
-//        options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
-//        WebDriver driver = new ChromeDriver(options);
+        /** For Remote Test Runs I.E. Gitpod **/
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--no-sandbox", "--disable-dev-shm-usage");
+        WebDriver driver = new ChromeDriver(options);
 
         driver.navigate().to("https://www.saucedemo.com");
         driver.findElement(By.id("user-name")).sendKeys("standard_user");
