@@ -17,15 +17,15 @@
 
 ##### Gitpod Setup
 1. Signup for a [GitHub Account](https://help.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account)
-2. Select the button below to open in Gitpod<a href="https://gitpod.io/#https://github.com/saucelabs-training/crash-course-in-automated-selenium-testing/tree/master/crash-course-ruby"><img src="open-in-gitpod.png" align="middle" title="Open in Gitpod"></a>
-3. Signinto Gitpod using your GitHub Account.
+2. Select the button to open in Gitpod: <a href="https://gitpod.io/#https://github.com/saucelabs-training/crash-course-in-automated-selenium-testing/tree/master/crash-course-ruby"><img src="open-in-gitpod.png" align="middle" title="Open in Gitpod"></a>
+3. Sign into Gitpod using your GitHub Account.
 4. Allow Gitpod access to GitHub
 5. In the upper left corner, select File > Auto Save
 6. Open the `crash-course-ruby` directory.
 7. Run `gem bundle install` to install a dependency bundler application
 8. Run `bundle install` to install the dependencies listed in the `Gemfile`
 
-
+<br />
 
 ## Exercises
 
