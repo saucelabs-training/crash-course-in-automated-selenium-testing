@@ -37,7 +37,7 @@
 ##### Use a Selenium WebDriver to open a browser
 1. Open `src/test/java/LocalExampleTest.java` in your editor.
 2. Uncomment lines `1` to `19`.
-3. Uncomment lines `15` t0 `29`.
+3. Uncomment lines `15` t0 `31`.
 4. In a terminal, run the following command:
     ```
     mvn test -D=LocalExampleTest
