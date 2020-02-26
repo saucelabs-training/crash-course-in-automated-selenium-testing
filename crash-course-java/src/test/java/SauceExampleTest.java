@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +11,8 @@ import java.net.URL;
 
 
 public class SauceExampleTest {
-    public static void main (String[] args) throws MalformedURLException {
+    @Test
+    public void main () throws MalformedURLException {
 
         String sauceUserName = System.getenv("SAUCE_USERNAME");
         String sauceAccessKey = System.getenv("SAUCE_ACCESS_KEY");
