@@ -30,8 +30,8 @@
 
 ##### Use a Selenium WebDriver to open a browser
 1. Open `local/local_example.py` in your editor.
-2. Uncomment lines `2`, and `5`.
-3. Uncomment lines `12`, anc `18`.
+2. Uncomment lines `2` through `5`.
+3. Uncomment lines `12` through `18`.
 4. In a terminal, run the following command:
     ```
     python3 local/local_example.py
@@ -79,7 +79,7 @@
 2. Write the following lines immediately before `@driver.quit` (line `25`):
     ```
     actual_result = "passed" if driver.current_url == "https://www.saucedemo.com/inventory.html" else "failed"
-    puts "The test #{actual_result}"
+    print("The test " + actual_result)
     ```
 3. In a terminal, run the following command:
     ```
