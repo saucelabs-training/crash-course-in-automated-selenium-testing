@@ -11,4 +11,5 @@ tasks:
   - init: >
       gem install bundler \
       && bundle install --gemfile=crash-course-ruby/Gemfile \
-      && pip3 install -r crash-course-python/requirements.txt
+      && pip3 install -r crash-course-python/requirements.txt \
+      && npm install crash-course-js/package.json

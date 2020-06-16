@@ -7,6 +7,9 @@
 ### Java template
 *.class
 
+## JavaScript Stuff
+**package-lock.json
+
 ## Docker Stuff
 **/.devcontainer
 **.env

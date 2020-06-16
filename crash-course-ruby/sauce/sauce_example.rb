@@ -7,15 +7,15 @@ require 'selenium-webdriver'
 sauce_username = ENV['SAUCE_USERNAME']
 sauce_access_key = ENV['SAUCE_ACCESS_KEY']
 
-sauce_url = "https://@ondemand.saucelabs.com:443/wd/hub"
+sauce_url = "https://ondemand.saucelabs.com:443/wd/hub"
 
 #
 # 2. Grab browser and OS combos in capabilities from: https://wiki.saucelabs.com/display/DOCS/Platform+Configurator
 #
 capabilities = {
-    browser_name: '',
-    browser_version: '',
-    platform_name: '',
+    browser_name: 'chrome',
+    browser_version: 'latest',
+    platform_name: 'Windows 10',
     "sauce:options" => {
         username: sauce_username,
         accessKey: sauce_access_key,

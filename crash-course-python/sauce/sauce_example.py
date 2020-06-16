@@ -1,6 +1,8 @@
 # Selenium 3.14+ doesn't enable certificate checking
 import os
 import urllib3
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 from selenium import webdriver
 
