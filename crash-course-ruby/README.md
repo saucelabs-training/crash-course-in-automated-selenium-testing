@@ -31,8 +31,8 @@
 
 ##### Use a Selenium WebDriver to open a browser
 1. Open `local/local_example.rb` in your editor.
-2. Uncomment lines `1`, and `15`.
-3. Uncomment line `25`.
+2. Uncomment lines: `1`, `4-8`, and `17`.
+3. Ensure that line `25` is also uncommented
 4. In a terminal, run the following command:
     ```
     ruby local/local_example.rb
