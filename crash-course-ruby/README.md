@@ -12,6 +12,13 @@
 5. Open the `crash-course-ruby` directory.
 6. Run `gem bundle install` to install a dependency bundler application
 7. Run `bundle install` to install the dependencies listed in the `Gemfile`
+8. Update the `chromedriver` file in `local/webdrivers/<os>` based on the version of **chrome you currently have installed** on your computer.
+   > Visit [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads) to choose the correct download
+10. Change the values in the variables in line `4` and `5` to reflect your changes. For example:
+   ```
+   os = "mac64"
+   driver_version="chromedriver109"
+   ```
 
 <br />
 

@@ -1,10 +1,10 @@
 #require 'selenium-webdriver'
 
 ## For Local Runs ##
-#os = "macOS"
+#os = "mac64"
 #driver_version="chromedriver80"
 
-#Selenium::WebDriver::Chrome::Service.driver_path=('./webdrivers/' + os + '/' + driver_version + '/chromedriver')
+#Selenium::WebDriver::Chrome::Service.driver_path=('./local/webdrivers/' + os + '/' + driver_version + '/chromedriver')
 #@driver = Selenium::WebDriver.for :chrome
 
 ## For Remote Runs i.e. Gitpod ##
